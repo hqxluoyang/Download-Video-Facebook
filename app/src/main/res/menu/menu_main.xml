@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_explorer"
+            android:icon="@drawable/ico_browser"
+            android:title="@string/browser" />
+
+        <item
+            android:id="@+id/nav_download"
+            android:icon="@drawable/ico_download"
+            android:title="@string/video_download" />
+
+        <item
+            android:id="@+id/nav_watched"
+            android:icon="@drawable/ico_video"
+            android:title="@string/video_watch" />
+
+        <item
+            android:id="@+id/nav_newfeed"
+            android:icon="@drawable/ico_new_feed"
+            android:title="@string/newsfeed" />
+
+        <item
+            android:id="@+id/nav_timeline"
+            android:icon="@drawable/ico_time"
+            android:title="@string/timeline" />
+
+        <item
+            android:id="@+id/nav_post"
+            android:icon="@drawable/ico_post"
+            android:title="@string/post" />
+        <item
+            android:id="@+id/nav_upload_video"
+            android:icon="@drawable/ico_upload"
+            android:title="@string/video_upload" />
+
+        <item
+            android:id="@+id/nav_tagged_video"
+            android:icon="@drawable/ico_tagged"
+            android:title="@string/video_tagged" />
+
+
+        <item
+            android:id="@+id/nav_saved"
+            android:icon="@drawable/ico_save"
+            android:title="@string/video_save" />
+
+        <item
+            android:id="@+id/nav_video_liked"
+            android:icon="@drawable/ico_like"
+            android:title="@string/video_like" />
+
+        <item
+            android:id="@+id/nav_video_shared"
+            android:icon="@drawable/ico_share"
+            android:title="@string/video_share" />
+
+        <item
+            android:id="@+id/nav_watched_video"
+            android:icon="@drawable/ico_movie_watch"
+            android:title="@string/movie_watch" />
+
+        <item
+            android:id="@+id/nav_my_video"
+            android:icon="@drawable/ico_movie"
+            android:title="@string/movie" />
+
+        <item
+            android:id="@+id/nav_friend_video"
+            android:icon="@drawable/ico_friend"
+            android:title="@string/friend_video" />
+
+        <item
+            android:id="@+id/nav_group_video"
+            android:icon="@drawable/ico_group"
+            android:title="@string/group_video" />
+
+        <item
+            android:id="@+id/nav_page_video"
+            android:icon="@drawable/ico_page"
+            android:title="@string/page_video" />
+
+        <item
+            android:id="@+id/nav_funny_video"
+            android:icon="@drawable/ico_funny"
+            android:title="@string/funny_page" />
+
+        <item
+            android:id="@+id/nav_search_video"
+            android:icon="@drawable/ico_search"
+            android:title="@string/search_page" />
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ico_setting"
+            android:title="@string/setting" />
+
+    </group>
+</menu>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/icon_logo_1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_button_web"
+        android:layout_below="@+id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Video Downloader For Facebook"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/login_button_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_btn_press"
+        android:elevation="10dp"
+        android:padding="15dp"
+        android:text="Login Facebook By Web"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/titleWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_button_web"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Get All Video Download Features. Recommended !"
+        android:textColor="@color/colorGray"
+        android:textSize="13sp"
+        android:visibility="visible" />
+
+
+    <RelativeLayout
+        android:id="@+id/frameLoginApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleWeb"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/loginApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            facebook:com_facebook_login_text="Login"
+            facebook:com_facebook_logout_text="Logout" />
+
+        <Button
+            android:id="@+id/login_button_sdk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_btn_1"
+            android:elevation="10dp"
+            android:padding="15dp"
+            android:text="Login Facebook By App"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/noteApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/titleWeb"
+        android:layout_alignRight="@+id/titleWeb"
+        android:layout_below="@+id/frameLoginApp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Only Get Timeline, Uploaded, Pages, Groups Video"
+        android:textColor="@color/colorGray"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/noteApp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/noteApp"
+        android:layout_below="@+id/noteApp"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textColor="@color/colorGray"
+        android:textSize="13sp" />
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="v1.0"
+        android:textColor="@color/colorGray"
+        android:textSize="15sp" />
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite2">
+
+    <ListView
+        android:id="@+id/listPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:padding="3dp"
+        tools:listitem="@layout/items_page"></ListView>
+
+    <com.example.datvit.facebookvideodownloader.utils.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_page_found"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:id="@+id/tvNoPage"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fbProgress"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        app:indicatorName="BallTrianglePathIndicator"
+        app:indicatorColor="@color/colorAccent"/>
+</RelativeLayout>

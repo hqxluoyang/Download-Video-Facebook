@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite2">
+
+    <RelativeLayout
+        android:id="@+id/frameTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="5dp"
+            android:src="@drawable/ico_back" />
+
+        <com.example.datvit.facebookvideodownloader.utils.CustomFontTextView
+            android:id="@+id/namePage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/btnBack"
+            android:gravity="center"
+            android:lines="1"
+            android:text="Page Video"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listVideoWatched"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:layout_below="@+id/frameTop"
+        android:padding="3dp"
+        tools:listitem="@layout/items_video"></ListView>
+
+    <com.example.datvit.facebookvideodownloader.utils.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_movie_found"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:id="@+id/tvNoMovie"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fbProgress"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        app:indicatorName="BallTrianglePathIndicator"
+        app:indicatorColor="@color/colorAccent"/>
+</RelativeLayout>

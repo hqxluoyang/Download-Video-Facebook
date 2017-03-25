@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.datvit.facebookvideodownloader">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".activities.StartActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.PlayVideoYoutubeActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" />
+        <activity
+            android:name=".activities.LoginByWebActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.PageVideoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.GroupVideoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.FriendTaggedVideoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.FriendTimelineVideoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.FriendUploadedVideoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.FriendsVideoPlayBrowserActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.OnlineVideosActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.FunnyVideoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.NewFeedFriendActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.UploadedFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TaggedFriendActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.TimelineFriendActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
